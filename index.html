@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Assidnment 2</title>
+</head>
+<body>
+
+   <main class="interface py-5 position-relative ">
+    <div class="container d-flex flex-column justify-content-center text-center align-content-center ">
+        <h1 class=" py-2  mt-5 position-relative  ">
+            Bookmarker</h1>
+        <div class="dataInput text-center">
+            <h3 class="text-center mt-5">
+        <i class="fa-solid fa-bookmark "></i>
+                
+                Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark "></i>
+            
+            </h3>
+            <div class="mb-3 mt-3">
+                
+                <label for="inputOfName" class="form-label d-flex icon-book">
+                    <i class="fa-solid fa-book "></i>
+                    Site Name</label>
+                <input type="text" class="form-control " id="inputOfName" placeholder="Bookmark Name">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="inputOfURL" class="form-label d-flex text-start">
+                <i class="fa-solid fa-link"></i>
+                    
+                    Site URL</label>
+                <input type="email" class="form-control " id="inputOfURL" placeholder="Website URL">
+              </div>
+              <button class="btn btn-danger position mb-5 px-5" onclick="submit()">Submit</button>
+        </div>
+        <table class="table text-center mt-4">
+            <thead >
+                <tr>
+                    <th class="text-capitalize">index</th>
+                    <th class="text-capitalize"> website name</th>
+                    <th class="text-capitalize"> visit</th>
+                    <th class="text-capitalize">delete</th>
+                </tr>
+            </thead>
+            <tbody id="dataRow">
+            </tbody>
+        </table>
+    </div>
+   
+</main>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
